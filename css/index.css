@@ -1,0 +1,517 @@
+/* IMPORT FONT */
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cutive+Mono&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Rakkas&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Rakkas&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Rakkas&family=Suez+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Rakkas&family=Suez+One&display=swap");
+
+/* Override Bootstrap styles */
+body {
+  padding-top: 70px;
+  border-radius: 0;
+  background-color: transparent !important; /* Ensure no background color */
+}
+
+.header-section {
+  background-color: #ffffff; /* Warna latar belakang */
+  margin-top: auto;
+}
+
+/*WARNA NAVBAR*/
+.navbar.bg-primary {
+  background-color: #ffffff !important; /* Warna hitam */
+  border-radius: 0;
+}
+
+/*MENGATUR HURUF NAVBAR*/
+.navbar-nav .nav-link {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; /* Ganti dengan font yang Anda inginkan */
+  font-size: 18px;
+  color: #000000;
+  height: 50px;
+  transition: color 0.3s ease;
+}
+
+/* ANIMASI WARNA WARNI MENU NAVBAR */
+@keyframes changeColor {
+  0% {
+    color: #1a1a1a;
+  } /* Warna awal */
+  25% {
+    color: #46252e;
+  } /* Warna ke-2 */
+  50% {
+    color: #204f00;
+  } /* Warna ke-3 */
+  75% {
+    color: #1a005b;
+  } /* Warna ke-4 */
+  100% {
+    color: #641b1b;
+  } /* Kembali ke warna awal */
+}
+
+.navbar-nav .nav-link:hover {
+  animation: changeColor 1s infinite; /* Berlaku saat hover */
+}
+
+/*MENGATUR NAMA*/
+.navbar-brand {
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #000000;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+}
+
+/*MENGATUR JARAK NAVBAR*/
+.nav-link {
+  margin-right: 20px; /* Ubah angka 20px sesuai dengan jarak yang diinginkan */
+}
+
+.header-title {
+  opacity: 0; /* Mulai dengan opasitas 0 */
+  transform: translateX(-20px); /* Geser elemen ke kiri */
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out; /* Animasi durasi dan jenis easing */
+  font-size: 2.5rem; /* Ukuran font untuk h1 */ /* Ketebalan font untuk h1 */
+  color: #000074; /* Warna teks untuk h1 */
+  margin-bottom: 20px; /* Jarak bawah antara teks h1 dengan elemen berikutnya */
+  margin-top: 1px;
+  margin-left: 5px;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.header-title.show {
+  opacity: 1; /* Ubah opasitas menjadi 1 */
+  transform: translateX(0); /* Kembalikan ke posisi semula */
+}
+
+/* Gaya untuk subjudul */
+.h2-home {
+  font-size: 1.5rem; /* Ukuran font untuk h2 */
+  font-weight: 200; /* Ketebalan font untuk h2 */
+  color: #000074; /* Warna teks untuk h2 */
+  margin-bottom: 1px; /* Jarak bawah antara teks h2 dengan elemen berikutnya */
+  margin-left: 5px;
+  font-family: "Rakkas", serif;
+  font-style: normal;
+  opacity: 0; /* Mulai dengan opasitas 0 */
+  transform: translateX(-20px); /* Geser elemen ke kiri */
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out; /* Animasi durasi dan jenis easing */
+}
+
+.h2-home.show {
+  opacity: 1; /* Ubah opasitas menjadi 1 */
+  transform: translateX(0); /* Kembalikan ke posisi semula */
+}
+
+.h3-home.show {
+  opacity: 1; /* Ubah opasitas menjadi 1 */
+  transform: translateX(0); /* Kembalikan ke posisi semula */
+}
+
+/* Gaya untuk teks deskripsi */
+.h3-home {
+  font-size: 0.9rem; /* Ukuran font untuk h2 */
+  /* Ketebalan font untuk h2 */
+  color: #000000; /* Warna teks untuk h2 */
+  margin-top: 5px;
+  /* Jarak bawah antara teks h2 dengan elemen berikutnya */
+  margin-left: 5px;
+  text-align: justify;
+  font-family: "Courier Prime", monospace;
+  font-weight: 900;
+  font-style: normal;
+  opacity: 0; /* Mulai dengan opasitas 0 */
+  transform: translateX(-20px); /* Geser elemen ke kiri */
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out; /* Animasi durasi dan jenis easing */
+}
+
+/* Mengatur tata letak flexbox untuk container */
+.container {
+  display: flex;
+  justify-content: flex-start; /* Menempatkan elemen ke kiri */
+  align-items: center; /* Memusatkan elemen secara vertikal */
+}
+
+/* Mengatur gambar agar berukuran kecil */
+.header-image {
+  max-width: 100px; /* Sesuaikan dengan ukuran yang diinginkan */
+  height: auto;
+  margin-left: auto; /* Menggeser gambar ke kanan */
+  margin-right: 20px; /* Jarak antara gambar dan teks */
+}
+
+.img-fluid {
+  opacity: 0; /* Mulai dengan opasitas 0 */
+  transform: translateY(-20px); /* Geser elemen ke atas */
+  transition: opacity 3s ease-in-out, transform 3s ease-in-out; /* Animasi durasi dan jenis easing */
+}
+.img-fluid.show {
+  opacity: 1; /* Ubah opasitas menjadi 1 */
+  transform: translateY(0); /* Kembalikan ke posisi semula */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Mengatur jarak antara elemen */
+.col-md-6 {
+  margin-bottom: 90px; /* Jarak bawah untuk memisahkan setiap row */
+}
+
+/* Style untuk section "About Me" */
+#about-section {
+  padding: 10px 0; /* Atur padding atas dan bawah */
+  background-image: linear-gradient(
+    to right top,
+    #000000,
+    #200a16,
+    #330e2b,
+    #411448,
+    #43206c,
+    #3b2376,
+    #2c2781,
+    #0b2b8c,
+    #0d207c,
+    #0d166c,
+    #0a0b5c,
+    #08004d
+  );
+}
+
+/* Style untuk section "About Me" */
+#about-section {
+  background-color: #0b70ff; /* Warna latar belakang */
+  padding: 50px 0; /* Atur padding atas dan bawah */
+}
+
+/* Style untuk judul "About Me" */
+.h1-about {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Suez One", serif;
+  font-style: normal;
+  color: floralwhite;
+}
+
+/* Style untuk subjudul "Sampurasun Sadayana" */
+.h2-about {
+  font-size: 18px; /* Ukuran font */
+  font-style: italic; /* Gaya font menjadi miring */
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+p {
+  text-align: justify;
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+}
+
+/* Style untuk judul "Technical Skills" */
+.h3 {
+  font-size: 30px; /* Ukuran font */
+  font-weight: bold; /* Ketebalan font */
+  margin-top: 50px; /* Jarak atas dari paragraf sebelumnya */
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: yellow;
+}
+
+/* Style untuk container gambar keterampilan teknis */
+.image-container {
+  display: flex; /* Mengatur tata letak menjadi flexbox */
+  flex-wrap: wrap; /* Mengizinkan gambar untuk melintas ke baris berikutnya jika ruang tidak mencukupi */
+  justify-content: center; /* Pusatkan gambar */
+  margin-bottom: px; /* Jarak bawah dari paragraf sebelumnya */
+}
+
+/* Style untuk gambar keterampilan teknis */
+.image-container img {
+  max-width: 80px; /* Ukuran maksimum gambar */
+  margin: 10px; /* Ruang di antara gambar */
+}
+
+/* Style untuk judul "Tools Used" */
+.h4 {
+  font-size: 30px; /* Ukuran font */
+  margin-top: 50px; /* Jarak atas dari paragraf sebelumnya */
+  color: yellow;
+  text-align: right;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: yellow;
+}
+
+/* Style untuk container gambar alat yang digunakan */
+.image-image-container {
+  display: flex; /* Mengatur tata letak menjadi flexbox */
+  flex-wrap: wrap; /* Mengizinkan gambar untuk melintas ke baris berikutnya jika ruang tidak mencukupi */
+  justify-content: center; /* Pusatkan gambar */
+  margin-bottom: 20px; /* Jarak bawah dari paragraf sebelumnya */
+}
+
+/* Style untuk gambar alat yang digunakan */
+.image-image-container img {
+  max-width: 80px; /* Ukuran maksimum gambar */
+  margin: 10px; /* Ruang di antara gambar */
+}
+.card-body {
+  font-family: Arial, sans-serif; /* Ganti font menjadi Arial atau font sans-serif lainnya */
+}
+
+.card-title {
+  font-size: 1.25rem; /* Ukuran font judul */
+  font-weight: bold; /* Ketebalan font judul */
+}
+
+.card-text {
+  font-size: 1rem; /* Ukuran font teks */
+  color: #333; /* Warna teks */
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+.card-container {
+  opacity: 0;
+  transform: translateY(-50px); /* Menggeser kartu ke atas sejauh 50px */
+  transition: opacity 0.8s ease, transform 0.8s ease; /* Transisi untuk opacity dan transform */
+}
+
+.card-container.show {
+  opacity: 5;
+  transform: translateY(0); /* Mengembalikan kartu ke posisi normal */
+}
+.btn {
+  font-size: 1rem; /* Ukuran font tombol */
+}
+.h1-p {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 2rem;
+  font-family: "Suez One", serif;
+  font-style: normal;
+  font-weight: bold; /* Ketebalan font */
+  margin-bottom: 20px; /* Menggeser teks ke bawah */
+  margin-top: 45px;
+  color: #ffffff;
+}
+
+.h2-p {
+  font-size: 1.5rem; /* Ukuran font untuk h2 */
+  font-weight: 200; /* Ketebalan font untuk h2 */
+  color: #ffffff; /* Warna teks untuk h2 */
+  margin-bottom: 5px; /* Jarak bawah antara teks h2 dengan elemen berikutnya */
+  margin-left: 100px;
+  font-family: "Rakkas", serif;
+  font-style: normal;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Agar card dapat melingkar saat ukuran layar kecil */
+  justify-content: space-around; /* Menyusun card secara merata dengan jarak yang sama */
+}
+
+.card {
+  width: 18rem;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease; /* Efek transisi */
+  border-radius: 10px; /* Sudut bulat */
+  border: 5px solid; /* Garis pinggiran */
+  border-color: #2b2828;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Menggeser card sedikit ke atas saat hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
+  border-color: rgba(0, 0, 0, 0.1); /* Warna border saat hover */
+}
+
+#project {
+  background-image: linear-gradient(
+    to bottom,
+    #292929,
+    #272727,
+    #252525,
+    #232323,
+    #212121,
+    #1e1e1e,
+    #1b1b1b,
+    #181818,
+    #141414,
+    #0e0e0e,
+    #080808,
+    #000000
+  );
+  padding: 20px; /* Atur padding */
+}
+
+/* Style untuk section contact */
+#contact {
+  padding: 80px 0;
+  background-color: #f0f0f0;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-family: "Suez One", serif;
+  font-style: normal;
+  font-weight: bold; /* Ketebalan font */
+}
+
+#contact p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+#contact .contact-info {
+  padding: 20px;
+  background-color: #00254b;
+  border-radius: 10px;
+}
+
+#contact .contact-info ul {
+  padding-left: 0;
+}
+
+#contact .contact-info ul li {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#contact .contact-info ul li i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+#contact .contact-info ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+#contact .contact-info ul li a:hover {
+  color: #fafcff;
+}
+
+#contact .contact-form {
+  background-color: #00254b;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#contact .contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+#contact .contact-form input[type="text"],
+#contact .contact-form input[type="email"],
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+#contact .contact-form textarea {
+  resize: vertical;
+}
+
+#contact .contact-form button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+#contact .contact-form button:hover {
+  background-color: #0056b3;
+}
+.footer {
+  background-color: #333; /* Warna latar belakang footer */
+  color: #fff; /* Warna teks footer */
+  padding: 50px 0; /* Padding atas dan bawah footer */
+}
+
+.container {
+  width: 80%; /* Lebar konten footer */
+  margin: 0 auto; /* Mengatur konten footer ke tengah */
+}
+
+.footer-content {
+  text-align: center; /* Pusatkan konten footer */
+}
+
+.social-icons {
+  list-style: none; /* Hapus bullet points dari daftar ikon sosial */
+  padding: 0; /* Hapus padding dari daftar ikon sosial */
+  display: flex; /* Mengatur daftar ikon sosial menjadi flexbox */
+  justify-content: center; /* Pusatkan ikon sosial secara horizontal */
+  align-items: center; /* Pusatkan ikon sosial secara vertikal */
+  margin-top: 10px;
+}
+
+.social-icons li {
+  margin-right: 20px; /* Jarak antara ikon sosial */
+  margin-bottom: auto;
+}
+
+.social-icons li:last-child {
+  margin-right: 0; /* Hapus margin kanan dari ikon sosial terakhir */
+}
+
+.social-icons a img {
+  width: 50px; /* Atur lebar gambar */
+  height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi */
+  margin: 0 auto; /* Pusatkan gambar secara horizontal */
+}
+.footer-content {
+  text-align: center; /* Pusatkan konten footer */
+}
+
+.footer-content h2,
+.footer-content p {
+  display: inline-block; /* Menjadikan elemen inline block */
+  margin: 0 auto; /* Pusatkan horizontal */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#contact .contact-info,
+#contact .contact-form {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#contact .contact-info.show,
+#contact .contact-form.show {
+  opacity: 1;
+  transform: translateY(0);
+}

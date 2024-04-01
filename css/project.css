@@ -1,0 +1,91 @@
+/* Override Bootstrap styles */
+body {
+  border-radius: 0;
+  background-color: transparent !important; /* Ensure no background color */
+}
+
+/* Gradien untuk body */
+body {
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #fefefe,
+    #fefefe,
+    #f1f1f1,
+    #e3e3e4,
+    #d6d6d7,
+    #bababb,
+    #9f9ea0,
+    #858486,
+    #6c6a6c
+  ); /* Gradien vertikal dari atas ke bawah */
+  color: rgb(0, 0, 0); /* Warna teks pada body */
+  background-size: cover; /* Menyesuaikan ukuran gradien */
+  background-repeat: no-repeat; /* Mencegah pengulangan gradien */
+  height: 100vh;
+  border-radius: 0;
+}
+
+/*WARNA NAVBAR*/
+.navbar.bg-primary {
+  background-color: #ffffff !important; /* Warna hitam */
+  border-radius: 0;
+}
+
+/*MENGATUR HURUF NAVBAR*/
+.navbar-nav .nav-link {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; /* Ganti dengan font yang Anda inginkan */
+  font-size: 18px;
+  color: #000000;
+  height: 50px;
+  transition: color 0.3s ease;
+}
+
+/* ANIMASI WARNA WARNI MENU NAVBAR */
+@keyframes changeColor {
+  0% {
+    color: #ff5733;
+  } /* Warna awal */
+  25% {
+    color: #c70039;
+  } /* Warna ke-2 */
+  50% {
+    color: #900c3f;
+  } /* Warna ke-3 */
+  75% {
+    color: #581845;
+  } /* Warna ke-4 */
+  100% {
+    color: #ff5733;
+  } /* Kembali ke warna awal */
+}
+
+.navbar-nav .nav-link:hover {
+  animation: changeColor 1s infinite; /* Berlaku saat hover */
+}
+
+/*MENGATUR NAMA BRAND*/
+.navbar-brand {
+  font-family: cursive;
+  font-size: 15px;
+  font-weight: lighter;
+  color: #000000;
+}
+
+/*MENGATUR JARAK NAVBAR*/
+.nav-link {
+  margin-right: 20px; /* Ubah angka 20px sesuai dengan jarak yang diinginkan */
+}
+
+.h1 {
+  font-size: 2.3rem; /* Ukuran font untuk h1 */ /* Ketebalan font untuk h1 */
+  color: #7b5bfa; /* Warna teks untuk h1 */
+  margin-bottom: 20px; /* Jarak bawah antara teks h1 dengan elemen berikutnya */
+  margin-top: 140px;
+  margin-left: 65px;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

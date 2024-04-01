@@ -1,0 +1,147 @@
+/* Override Bootstrap styles */
+body {
+  border-radius: 0;
+  background-color: transparent !important; /* Ensure no background color */
+}
+
+/* Gradien untuk body */
+body {
+  background: linear-gradient(
+    to bottom,
+    #000000,
+    #1e0010,
+    #2b0023,
+    #2f003c,
+    #1f005d
+  ); /* Gradien vertikal dari atas ke bawah */
+  color: white; /* Warna teks pada body */
+  background-size: cover; /* Menyesuaikan ukuran gradien */
+  background-repeat: no-repeat; /* Mencegah pengulangan gradien */
+  height: auto;
+  border-radius: 0;
+}
+.navbar.bg-primary {
+  background-color: #000 !important; /* Warna hitam */
+  border-radius: 0;
+}
+
+/*MENGATUR HURUF NAVBAR*/
+.navbar-nav .nav-link {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; /* Ganti dengan font yang Anda inginkan */
+  font-size: 18px;
+  color: #f4f4f4;
+  height: 50px;
+  transition: color 0.3s ease;
+}
+
+/* Animasi warna-warni */
+@keyframes changeColor {
+  0% {
+    color: #ff5733;
+  } /* Warna awal */
+  25% {
+    color: #c70039;
+  } /* Warna ke-2 */
+  50% {
+    color: #900c3f;
+  } /* Warna ke-3 */
+  75% {
+    color: #581845;
+  } /* Warna ke-4 */
+  100% {
+    color: #ff5733;
+  } /* Kembali ke warna awal */
+}
+
+.navbar-nav .nav-link:hover {
+  animation: changeColor 1s infinite; /* Berlaku saat hover */
+}
+
+/*MENGATUR NAMA*/
+.navbar-brand {
+  font-family: cursive;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.nav-link {
+  margin-right: 20px; /* Ubah angka 20px sesuai dengan jarak yang diinginkan */
+}
+
+.h1 {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 2rem;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.h2 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  margin-left: 40px;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+p {
+  text-align: justify;
+  margin-left: 40px;
+  font-family: monospace;
+  margin-right: 20px;
+}
+
+.h3 {
+  text-align: left;
+  margin-top: 50px;
+  font-size: 2rem;
+  font-family: monospace;
+  font-weight: bold;
+}
+.image-container {
+  text-align: center; /* Mengatur konten di tengah */
+}
+
+/* Gambar di dalam container */
+.image-container img {
+  width: 60px; /* Lebar gambar */
+  margin: 20px; /* Jarak antara gambar */
+  text-align: center;
+}
+
+.image-image-container {
+  text-align: center; /* Mengatur konten di tengah */
+}
+
+.image-image-container img {
+  width: 60px; /* Lebar gambar */
+  margin: 10px; /* Jarak antara gambar */
+  margin-bottom: 80px;
+}
+.h4 {
+  text-align: right;
+  margin-top: 50px;
+  font-size: 2rem;
+  font-family: monospace;
+  font-weight: bold;
+  margin-right: 40px;
+}
+
+footer {
+  background-color: #000000; /* Warna latar belakang footer */
+  color: #fff; /* Warna teks */
+  padding: 20px; /* Padding di dalam footer */
+  text-align: center; /* Teks di tengah */
+}
+
+/* CSS untuk tautan di footer */
+footer nav a {
+  color: #fff; /* Warna tautan */
+  text-decoration: none; /* Menghapus garis bawah tautan */
+  padding: 0 10px; /* Padding di sekitar tautan */
+}
+
+/* CSS untuk tautan di footer saat dihover */
+footer nav a:hover {
+  text-decoration: underline; /* Garis bawah saat dihover */
+}

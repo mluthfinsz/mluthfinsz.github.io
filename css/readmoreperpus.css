@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Rakkas&family=Suez+One&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Rakkas&family=Suez+One&display=swap");
+body {
+  display: flex; /* Mengaktifkan Flexbox */
+  justify-content: center; /* Pusatkan konten secara horizontal */
+  align-items: center; /* Pusatkan konten secara vertikal */
+  height: 100vh; /* Set tinggi body sesuai dengan tinggi layar */
+  margin: 0; /* Hilangkan margin default */
+  background-image: radial-gradient(
+    circle,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #0e0004,
+    #170009,
+    #1d000f,
+    #27001b,
+    #2d002a,
+    #2d003e,
+    #200156
+  ); /* Gradien vertikal dari atas ke bawah */
+  /*color: rgb(0, 0, 0); /* Warna teks pada body */
+  /*background-size: cover; /* Menyesuaikan ukuran gradien */
+  /*background-repeat: no-repeat; /* Mencegah pengulangan gradien */
+  /*height: auto;
+  border-radius: 0;
+}*/
+}
+
+/* Style untuk container content */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90%; /* Lebar konten akan menjadi 90% dari lebar viewport */
+  max-width: 800px; /* Maksimum lebar konten agar tidak terlalu lebar */
+  margin: auto;
+}
+
+/* Style untuk h1 */
+h1 {
+  margin-bottom: 20px;
+  margin-top: 50px;
+  font-size: 24px; /* Ukuran font */
+  font-weight: bold; /* Ketebalan font */
+  font-family: "Suez One", serif; /* Jenis font */
+  font-style: normal; /* Gaya font */
+  background-image: linear-gradient(
+    to right,
+    #ffffff,
+    #f8f8f8,
+    #f0f0f0,
+    #e9e9e9,
+    #e2e2e2,
+    #dadada,
+    #d1d2d3,
+    #c9cacb,
+    #bcbfc1,
+    #b0b4b6,
+    #a3aaab,
+    #979f9f
+  ); /* Gradient warna latar belakang */
+  -webkit-background-clip: text; /* Gunakan teks sebagai background clip */
+  background-clip: text; /* Gunakan teks sebagai background clip */
+  color: transparent; /* Jadikan warna font transparan */
+}
+
+/* Style untuk card */
+.card {
+  max-width: 400px;
+  border: 1px solid #aeff00;
+  border-radius: 5vw;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 255, 4, 0.1);
+  transition: box-shadow 0.1s ease;
+  margin: 20px auto;
+  text-align: justify;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  margin-bottom: 50px;
+}
+
+/* Style untuk gambar pada card */
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+}
+
+/* Style untuk teks pada card */
+.card-text {
+  font-size: 14px;
+  color: #333;
+  padding: 1vw;
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Efek hover pada card */
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Style untuk h1 */
+h1 {
+  margin-bottom: 5vwpx; /* Jarak bawah antara h1 dan card */
+}
+
+.back-button {
+  display: flex;
+  justify-content: center; /* Menengahkan secara horizontal */
+  align-items: center; /* Menengahkan secara vertikal */
+  margin-top: 5vw; /* Jarak antara teks dengan tombol */
+}
+
+.back-button a {
+  text-decoration: none; /* Menghapus garis bawah default pada tautan */
+  font-size: 1.25rem; /* Ukuran font */
+  padding: 10px 20px; /* Padding tombol */
+  border-radius: 10px; /* Sudut tombol */
+  transition: background-color 0.3s, color 0.3s; /* Transisi efek hover */
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.back-button a:hover {
+  background-color: #0a0041; /* Warna latar belakang tombol saat dihover */
+  color: #0080ff; /* Warna teks saat dihover */
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%; /* Lebar card akan menjadi 100% dari lebar konten untuk layar kecil */
+    border-radius: 3vw; /* Border radius dalam satuan viewport width */
+  }
+}
+.card {
+  position: relative;
+  animation: slide-in 2s ease-in-out infinite alternate;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
